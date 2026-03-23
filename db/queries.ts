@@ -149,7 +149,7 @@ export const getCourseProgress = cache(async () => {
     activeLesson: firstUncompletedLesson,
     activeLessonId: firstUncompletedLesson?.id,
   };
-});
+}); 
 
 export const getLesson = cache(async (id?: number) => {
   const { userId } = await auth();
